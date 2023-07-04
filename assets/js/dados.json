@@ -1,0 +1,79 @@
+{
+  "usuarios": {
+   "id_usuario": {
+    "info": {
+     "nome": "",
+     "sobrenome": "",
+     "telefone": "",
+     "email": "",
+     "estado": "",
+     "cidade": "",
+     "bairro": "",
+     "Rua": "",
+     "códigoPostal": "",
+     "numeroCasa": "",
+     "complemento": ""
+    },
+    "credenciais": { 
+     "email": "",
+     "senha": "",
+     "id": ""
+    },
+    "carrinho": {
+     "01_carrinho": {
+      "data_criacao": "2023-06-08T12:00:00",
+      "itens": {
+       "01_item_1": {
+        "titulo": "Produto 1",
+        "preco_unitario": 10.99,
+        "cores_selecionadas": ["Azul"],
+        "quantidade": 2,
+        "imagem": "https://example.com/imagem_produto_1.jpg"
+       },
+       "01_item_2": {
+        "titulo": "Produto 2",
+        "preco_unitario": 15.99,
+        "cores_selecionadas": ["Vermelho", "Verde"],
+        "quantidade": 1,
+        "imagem": "https://example.com/imagem_produto_2.jpg"
+       }
+      }
+     }
+    }
+   }
+  },
+  "produtos": {
+    "01": {
+      "availablecolors": ["red"],
+      "image": "https://ae01.alicdn.com/kf/Se872f0f6b3d449e4a3f80d386d6bc0a0e.jpg_640x640Q90.jpg_.webp",
+      "category": "maquiagem",
+      "title": "13 Pçs/lote Pincéis de Maquiagem",
+      "review": "4.6 Review",
+      "price": "R$ 12,00",
+      "subtitle": "13 Pçs/lote Pincéis de Maquiagem Set Eye Shadow Foundation Mulheres Cosméticos Pó Blush Mistura Beleza Make Up Tool",
+      "details": "Este conjunto inclui 13 pincéis exclusivos para ajudar a criar uma variedade de looks diferentes.\nDiferentes formas e tamanhos das cerdas permitem que você crie uma variedade de looks, proporcionando estilos de maquiagem perfeitamente polidos.\nCada escova é trabalhada meticulosamente começando com o punho de madeira e a virola do alumínio.\nEnrole o estojo de transporte com o fechamento magnético do parafuso prisioneiro da imprensa armazena e protege escovas com facilidade.\nA maneira mais organizada e elegante de transportar sua maquiagem e cosméticos.\nLavável com nenhum corante Run.\nDestinado a entusiastas da maquiagem, as possibilidades criativas são infinitas.\n\nEspecificações:\nMaterial: Nylon cabelo + alumínio liga + plástico\nQuantidade: 13 pcs\nCor: verde, rosa, amarelo\nTamanho das escovas: Cerca 17 cm/ 6.2in\nPeso total: Cerca 75",
+      "images": [
+        "https://ae01.alicdn.com/kf/S9882a213507c4c629461d5c1cd042b5b0.jpg_640x640Q90.jpg_.webp",
+        "https://ae01.alicdn.com/kf/Sbeb62e25a7e04496a41867c61bdbe068l.jpg_640x640Q90.jpg_.webp",
+        "https://ae01.alicdn.com/kf/S05eb388608e64ba482efc0cd832369773.jpg_640x640Q90.jpg_.webp",
+        "https://ae01.alicdn.com/kf/S78580d509b654fe2a6125d92e6cd7989y.jpg_640x640Q90.jpg_.webp"
+      ]
+    },
+    "02": {
+      "availablecolors": ["none"],
+      "image": "https://ae01.alicdn.com/kf/S22f333381e8f45ab831229fc6352cd2bW.jpg_640x640Q90.jpg_.webp",
+      "category": "lâmpadas",
+      "title": "Lâmpada pequena bola mágica, LED giratório",
+      "review": "4.9 Review",
+      "price": "R$ 9,90",
+      "subtitle": "Lâmpada pequena bola mágica, LED giratório, cor cristal, KTV Bar",
+      "details": "Tolerância de potência\n3%\nTensão\n90-260V\nOrigem\nCN (Origem)",
+      "images": [
+        "https://ae01.alicdn.com/kf/S7ef0314af8944743b032b234ababf1a53.png_640x640.png_.webp",
+        "https://ae01.alicdn.com/kf/S6b3c49da22024c0f9bcc08c412ede9dbw.jpg_640x640Q90.jpg_.webp",
+        "https://ae01.alicdn.com/kf/Sc9472a75ac9e4bbba192e99efb0b32aev.jpg_640x640Q90.jpg_.webp",
+        "https://ae01.alicdn.com/kf/S478aefe203ef47b4bf0bdfd1c63590261.jpg_640x640Q90.jpg_.webp"
+      ]
+    }
+  }
+}
