@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="x-ua-compatible" content="ie=edge" />
+ <title>Muambas Shop Online Turvo</title>
+ <meta name="description" content="" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+ <!-- alert script -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
+
+ <!-- ========================= CSS here ========================= -->
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+ <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+ <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+ <link rel="stylesheet" href="assets/css/main.css" />
+ 
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+ <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+ <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+</head>
+<body>
+ <script type="module" src="assets/js/banco.js"></script>
+ <div class="preloader">
+  <div class="preloader-inner">
+   <div class="preloader-icon">
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+ </div>
+
+ <header class="header navbar-area">
+  <!-- Start Topbar -->
+  <div class="topbar">
+   <div class="container">
+    <div class="row align-items-center">
+     <div class="col-lg-4 col-md-4 col-12">
+      <div class="top-left">
+       <ul class="menu-top-link">
+        <li>
+         <div class="select-position">
+          <select id="select5">
+           <option value="0" selected>Português</option>
+           <option value="1">English</option>
+           <option value="2">Filipino</option>
+           <option value="3">Français</option>
+           <option value="4">العربية</option>
+           <option value="5">हिन्दी</option>
+           <option value="6">বাংলা</option>
+          </select>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-12">
+      <div class="top-middle">
+       <ul class="useful-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre </a></li>
+        <li><a href="contact.html">Contato</a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="center-flex col-lg-4 col-md-4 col-12 top-nav-perfil-">
+      <div class="top-end ">
+       <a href="profile.html">
+        <div class="user"><i class="lni lni-user"></i>Perfil</div>
+       </a>
+       <ul class="user-login">
+        <li>
+         <a href="login.html">Login</a>
+        </li>
+        <li>
+         <a href="login.html">Criar Conta</a>
+        </li>
+       </ul>
+       <div class="div-a-pedido">
+        <a class="a-pedido" href="Pedidos.html">Pedidos</a>
+       </div>
+       <div class="teste-tt nav-item dropdown ">
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+         <img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
+         <span class="d-none d-md-block dropdown-toggle ps-2 user-nome-ps-2"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+         <li class="dropdown-header">
+          <h6 class="user-nome">Nome do usuário</h6>
+          <span class="user-email">email@gmail.com</span>
+         </li>
+         <li>
+          <hr class="dropdown-divider">
+         </li>
+         <li>
+          <a class="dropdown-item d-flex align-items-center" href="profile.html">
+           <i class="bi bi-person"></i>
+           <span>Meu perfil</span>
+          </a>
+         </li>
+         <li>
+          <hr class="dropdown-divider">
+         </li>
+
+         <li>
+          <a class="dropdown-item d-flex align-items-center" href="profile.html">
+           <i class="bi bi-gear"></i>
+           <span>Configurações</span>
+          </a>
+         </li>
+         <li>
+          <hr class="dropdown-divider">
+         </li>
+
+         <div class="teste">
+          <a class="dropdown-item d-flex align-items-center" href="faq.html">
+           <i class="bi bi-question-circle"></i>
+           <span>Ajuda ?</span>
+          </a>
+         </div>
+         <li>
+          <hr class="dropdown-divider">
+         </li>
+
+         <li>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+           <i class="bi bi-box-arrow-right"></i>
+           <span><button id="login-out">Sair</button></span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Start Header Middle -->
+  <div class="header-middle">
+   <div class="container">
+    <div class="row align-items-center">
+     <div class="col-lg-3 col-md-3 col-7">
+      <!-- Start Header Logo -->
+      <a class="navbar-brand" href="#">
+       <img src="assets/images/logo/logo.png" alt="Logo">
+      </a>
+      <!-- End Header Logo -->
+     </div>
+     <div class="col-lg-5 col-md-7 d-xs-none">
+      <!-- Start Main Menu Search -->
+      <div class="main-menu-search">
+       <!-- navbar search start -->
+       <div class="navbar-search search-style-5">
+        <div class="search-select">
+         <div class="select-position">
+          <select id="select1">
+           <option selected>Todas</option>
+           <option value="eletronicos">Eletrônicos</option>
+           <option value="beleza">Beleza</option>
+           <option value="decoracao">Decoração</option>
+           <option value="esportes">Esportes</option>
+           <option value="joias">Jóias</option>
+           <option value="smartphones">Smartphones</option>
+           <option value="moda">Moda</option>
+          </select>
+         </div>
+        </div>
+        <div class="search-input">
+         <input type="text" placeholder="Pesquisar por produtos">
+        </div>
+        <div class="search-btn">
+         <button id="btn-search-products"><i class="lni lni-search-alt"></i></button>
+        </div>
+       </div>
+       <!-- navbar search Ends -->
+      </div>
+      <!-- End Main Menu Search -->
+     </div>
+     <div class="col-lg-4 col-md-2 col-5">
+      <div class="middle-right-area">
+       <div class="nav-hotline">
+        <i class="lni lni-phone"></i>
+        <h3>Telefone:
+         <span>(42) 99108-3236</span>
+        </h3>
+       </div>
+       <div class="navbar-cart">
+        <div class="wishlist">
+         <a href="javascript:void(0)">
+          <i class="lni lni-heart"></i>
+          <span class="total-items">0</span>
+         </a>
+        </div>
+        <div class="cart-items">
+         <a href="javascript:void(0)" class="main-btn">
+          <i class="lni lni-cart"></i>
+          <span class="total-items">0</span>
+         </a>
+         <!-- Shopping Item -->
+         <div class="shopping-item">
+          <div class="dropdown-cart-header">
+           <span></span>
+           <a href="#">Ver carrinho</a>
+          </div>
+
+          <ul class="cart-items shopping-list"></ul>
+          <div class="bottom">
+           <div class="total">
+            <span>Total</span>
+            <span class="total-amount">R$0,00</span>
+           </div>
+           <div class="button">
+            <a href="checkout.html" class="btn animate">Checkout</a>
+           </div>
+          </div>
+         </div>
+         <!--/ End Shopping Item -->
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Header Middle -->
+  <!-- Start Header Bottom -->
+  <div class="container">
+   <div class="row align-items-center">
+    <div class="col-lg-8 col-md-6 col-12">
+     <div class="nav-inner">
+      <!-- Start Mega Category Menu -->
+      <div class="mega-category-menu">
+       <span class="cat-button"><i class="lni lni-menu"></i>Todas as categorias</span>
+       <ul class="sub-category">
+        <li>
+         <a href="product-grids.html">Eletrônicos<i class="lni lni-chevron-right"></i></a>
+         <ul class="inner-sub-category">
+          <li><a href="product-grids.html">Digital Cameras</a></li>
+          <li><a href="product-grids.html">Camcorders</a></li>
+          <li><a href="product-grids.html">Camera Drones</a></li>
+          <li><a href="product-grids.html">Smart Watches</a></li>
+          <li><a href="product-grids.html">Headphones</a></li>
+          <li><a href="product-grids.html">MP3 Players</a></li>
+          <li><a href="product-grids.html">Microphones</a></li>
+          <li><a href="product-grids.html">Chargers</a></li>
+          <li><a href="product-grids.html">Batteries</a></li>
+          <li><a href="product-grids.html">Cables & Adapters</a></li>
+         </ul>
+        </li>
+        <li><a href="product-grids.html">accessories</a></li>
+        <li><a href="product-grids.html">Televisions</a></li>
+        <li><a href="product-grids.html">best selling</a></li>
+        <li><a href="product-grids.html">top 100 offer</a></li>
+        <li><a href="product-grids.html">sunglass</a></li>
+        <li><a href="product-grids.html">watch</a></li>
+        <li><a href="product-grids.html">man’s product</a></li>
+        <li><a href="product-grids.html">Home Audio & Theater</a></li>
+        <li><a href="product-grids.html">Computers & Tablets </a></li>
+        <li><a href="product-grids.html">Video Games </a></li>
+        <li><a href="product-grids.html">Home Appliances </a></li>
+       </ul>
+      </div>
+      <!-- End Mega Category Menu -->
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg">
+       <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+        <ul id="nav" class="navbar-nav ms-auto">
+         <li class="nav-item">
+          <a href="index.html" class="active" aria-label="Toggle navigation">Home</a>
+         </li>
+         <li class="nav-item">
+          <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Paginas</a>
+          <ul class="sub-menu collapse" id="submenu-1-2">
+           <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+           <li class="nav-item"><a href="Pedidos.html">Pedidos</a></li>
+           <li class="nav-item"><a href="login.html">Login</a></li>
+           <li class="nav-item"><a href="login.html">Registrar</a></li>
+           <li class="nav-item"><a href="profile.html">Perfil</a></li>
+          </ul>
+         </li>
+
+         <li class="nav-item">
+          <a href="contact.html" aria-label="Toggle navigation">Contato</a>
+         </li>
+        </ul>
+       </div>
+       <!-- navbar collapse -->
+      </nav>
+      <!-- End Navbar -->
+     </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+     <!-- Start Nav Social -->
+     <div class="nav-social">
+      <h5 class="title">Siga-nos:</h5>
+      <ul>
+       <li>
+        <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+       </li>
+       <li>
+        <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+       </li>
+       <li>
+        <a href="https://instagram.com/muambas_shop?igshid=MzNlNGNkZWQ4Mg=="><i class="lni lni-instagram"></i></a>
+       </li>
+       <li>
+        <a href="javascript:void(0)"><i class="lni lni-skype"></i></a>
+       </li>
+      </ul>
+     </div>
+     <!-- End Nav Social -->
+    </div>
+   </div>
+  </div>
+  <!-- End Header Bottom -->
+ </header>
+
+
+ <section class="hero-area">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-8 col-12 custom-padding-right">
+     <div class="slider-head">
+      <!-- Start Hero Slider -->
+      <div class="hero-slider">
+       <!-- Start Single Slider -->
+       <div class="single-slider" style="background-image: url(assets/images/hero/slider-1.jpg);">
+        <div class="content">
+         <h2><span style="color: red;">Pronta Entrega (R$ 11,99)</span>
+          Fita led RGB 5M
+         </h2>
+         <p>Bluetooth App Control LED Strip Light,<br>
+          Fita USB 5 metros, Luz flexível para TV<br>
+          Backlight,Decoração do quarto, 5V
+         </p>
+         <h3><span>Novo pedido</span>R$ 15.50</h3>
+         <div class="button">
+          <a href="#" class="btn">Comprar</a>
+         </div>
+        </div>
+       </div>
+       <!-- End Single Slider -->
+       <!-- Start Single Slider -->
+       <div class="single-slider" style="background-image: url(assets/images/hero/slider-2.jpg);">
+        <div class="content">
+         <h2><span style="color: red;">Oferta</span>
+          Pro6 Fone Bluetooth
+         </h2>
+         <p>Pro6 Sem Fio Bluetooth Fones De Ouvido
+          Tws <br> Fones De Ouvido Mini Heaset com <br>Caixa De Carregamento
+         </p>
+         <h3><span>Novo Pedido:</span> R$ 16.00</h3>
+         <div class="button">
+          <a href="#" class="btn">Comprar</a>
+         </div>
+        </div>
+       </div>
+       <!-- End Single Slider -->
+      </div>
+      <!-- End Hero Slider -->
+     </div>
+    </div>
+    <div class="col-lg-4 col-12">
+     <div class="row">
+      <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
+       <!-- Start Small Banner -->
+       <div class="hero-small-banner" style="background-image: url('assets/images/hero/slider-new.jpg');">
+        <div class="content">
+
+         <a href="#">
+          <h2> <span>Novos itens</span>
+           Cartão de memória<br>de alta velocidade<br>64gb original
+          </h2>
+          <h3>R$ 18.99</h3>
+         </a>
+        </div>
+       </div>
+       <!-- End Small Banner -->
+      </div>
+      <div class="col-lg-12 col-md-6 col-12">
+       <!-- Start Small Banner -->
+       <div class="hero-small-banner style2">
+        <div class="content">
+         <h2>Melhores Ofertas e Descontos!</h2>
+         <p>Encontre o produto ideal com o melhor fornecedor, unindo custo, qualidade e descontos especiais.</p>
+         <div class="button">
+          <a class="btn" href="https://wa.me/5542991083236?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20pesquisa%20sobre%20um%20produto%20que%20estou%20buscando.">Solicite Pedido</a>
+         </div>
+        </div>
+       </div>
+       <!-- Start Small Banner -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+ <section class="trending-product section" style="margin-top: 12px;">
+  <div class="container">
+   <div class="row ">
+    <div class="col-12">
+     <div class="section-title">
+      <h2>Produtos</h2>
+      <p>Descubra uma seleção irresistível de produtos que combinam qualidade, estilo e preços incríveis.</p>
+     </div>
+    </div>
+   </div>
+   <div class="row productCont" id="product-container">
+    <div class="col-lg-3 col-md-6 col-12">
+     <!-- Start Single Product -->
+     <div class="single-product">
+      <div class="product-image">
+       <img src="" alt="#" id="product-image-01">
+       <div class="cart-button button">
+        <a href="product-details.html">
+         <button class="btn add-to-cart" data-id="01" data-availablecolors="" data-image="" data-category="" data-title="" data-review="" data-price="" data-subtitle="" data-details="" data-image1="" data-image2="" data-image3="" data-image4="">
+          <i class="lni lni-cart"></i> Adicionar ao carrinho
+         </button>
+        </a>
+       </div>
+      </div>
+      <div class="product-info">
+       <span class="category" id="product-category-01"></span>
+       <h4 class="title">
+        <a href="product-grids.html" id="product-title-01"></a>
+       </h4>
+       <ul class="review">
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><span id="product-review-01"></span></li>
+       </ul>
+       <div class="price">
+        <span id="product-price-01"></span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+     <!-- Start Single Product -->
+     <div class="single-product">
+      <div class="product-image">
+       <img src="" alt="#" id="product-image-02">
+       <div class="cart-button button">
+        <a href="product-details.html">
+         <button class=" btn add-to-cart" data-id="02" data-availablecolors="" data-image="" data-category="" data-title="" data-review="" data-price="" data-subtitle="" data-details="" data-image1="" data-image2="" data-image3="" data-image4="">
+          <i class="lni lni-cart"></i> Adicionar ao carrinho
+         </button>
+        </a>
+       </div>
+      </div>
+      <div class="product-info">
+       <span class="category" id="product-category-02"></span>
+       <h4 class="title">
+        <a href="product-grids.html" id="product-title-02"></a>
+       </h4>
+       <ul class="review">
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><i class="lni lni-star-filled"></i></li>
+        <li><span id="product-review-02"></span></li>
+       </ul>
+       <div class="price">
+        <span id="product-price-02"></span>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- End Single Product -->
+   </div>
+  </div>
+ </section>
+ <section class="call-action section">
+  <div class="container">
+   <div class="row ">
+    <div class="col-lg-8 offset-lg-2 col-12">
+     <div class="inner">
+      <div class="content">
+       <h2 class="wow fadeInUp" data-wow-delay=".4s">Não encontrou seu produto ?<br>
+        Vamos ajudá-lo a encontrar !
+       </h2>
+       <p class="wow fadeInUp" data-wow-delay=".6s">Entre em contato conosco e faça seu pedido do produto que deseja, fazemos uma pesquisa do mercado de preço e te direcionamos para o melhor fornecedor.</p>
+       <div class="button wow fadeInUp" data-wow-delay=".8s">
+        <a href="https://wa.me/5542991083236?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20pesquisa%20sobre%20um%20produto%20que%20estou%20buscando." class="btn">Solicite Pedido</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+ <section class="banner section">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-6 col-md-6 col-12">
+     <div class="single-banner" style="background-image:url('assets/images/banner/banner-1-bg.jpg')">
+      <div class="content">
+       <h2>Smart Watch 2.0</h2>
+       <p>Space Gray Aluminum Case with <br>Black/Volt Real Sport Band </p>
+       <div class="button">
+        <a href="#" class="btn">Comprar</a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+     <div class="single-banner custom-responsive-margin" style="background-image:url('assets/images/banner/banner-2-bg.jpg')">
+      <div class="content">
+       <h2>Smart Headphone</h2>
+       <p>Lorem ipsum dolor sit amet, <br>eiusmod tempor
+        incididunt ut labore.
+       </p>
+       <div class="button">
+        <a href="#" class="btn">Comprar</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+ <section class="shipping-info">
+  <div class="container">
+   <ul>
+    <!-- Free Shipping -->
+    <li>
+     <div class="media-icon">
+      <i class="lni lni-delivery"></i>
+     </div>
+     <div class="media-body">
+      <h5>Frete Reduzido</h5>
+      <span>Frete fixo e reduzido para todos os produtos</span>
+     </div>
+    </li>
+    <!-- Money Return -->
+    <li>
+     <div class="media-icon">
+      <i class="lni lni-support"></i>
+     </div>
+     <div class="media-body">
+      <h5>24/7 Suporte.</h5>
+      <span>Via chat, Whatsapp e e-mail.</span>
+     </div>
+    </li>
+    <!-- Support 24/7 -->
+    <li>
+     <div class="media-icon">
+      <i class="lni lni-credit-cards"></i>
+     </div>
+     <div class="media-body">
+      <h5>Pagamento fácil.</h5>
+      <span>Serviço de pagamento seguro.</span>
+     </div>
+    </li>
+    <!-- Safe Payment -->
+    <li>
+     <div class="media-icon">
+      <i class="lni lni-reload"></i>
+     </div>
+     <div class="media-body">
+      <h5>Compra Segura.</h5>
+      <span>Garantia contra defeitos.</span>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </section>
+ <footer class="footer">
+  <!-- Start Footer Top -->
+  <div class="footer-top">
+   <div class="container">
+    <div class="inner-content">
+     <div class="row">
+      <div class="col-lg-3 col-md-4 col-12">
+       <div class="footer-logo">
+        <a href="index.html">
+         <img src="assets/images/logo/Branco-logo.png" alt="#">
+        </a>
+       </div>
+      </div>
+      <div class="col-lg-9 col-md-8 col-12">
+       <div class="footer-newsletter">
+        <h4 class="title">
+         Inscreva-se para receber promoções
+         <span>Garanta ofertas, cupons, descontos e informações.</span>
+        </h4>
+        <div class="newsletter-form-head">
+         <form action="#" method="get" target="_blank" class="newsletter-form">
+          <input name="EMAIL" placeholder="Email..." type="email">
+          <div class="button">
+           <button class="btn">Inscrever<span class="dir-part"></span></button>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Footer Top -->
+  <!-- Start Footer Middle -->
+  <div class="footer-middle">
+   <div class="container">
+    <div class="bottom-inner">
+     <div class="row">
+      <div class="col-lg-3 col-md-6 col-12">
+       <!-- Single Widget -->
+       <div class="single-footer f-contact">
+        <h3>Entre em contato conosco</h3>
+        <p class="phone">Telefone: +55 (42) 9 9108 3236</p>
+        <ul>
+         <li><span>Segunda-Sexta: </span> 9.00 am - 8.00 pm</li>
+         <li><span>Sábado: </span> 10.00 am - 6.00 pm</li>
+        </ul>
+        <p class="mail">
+         <a href="mailto:support@shopgrids.com">support@muambasshop.com</a>
+        </p>
+       </div>
+       <!-- End Single Widget -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+       <!-- Single Widget -->
+       <div class="single-footer f-link">
+        <h3>Informações</h3>
+        <ul>
+         <li><a href="sobre.html">Sobre</a></li>
+         <li><a href="contact.html">Contato</a></li>
+         <li><a href="javascript:void(0)">Downloads</a></li>
+         <li><a href="javascript:void(0)">Parcerias</a></li>
+         <li><a href="faq.html">FAQs</a></li>
+        </ul>
+       </div>
+       <!-- End Single Widget -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+       <!-- Single Widget -->
+       <div class="single-footer f-link">
+        <h3>Departamentos</h3>
+        <ul>
+         <li><a href="javascript:void(0)">Computador & Acessórios</a></li>
+         <li><a href="javascript:void(0)">Smartphones & Tablets</a></li>
+         <li><a href="javascript:void(0)">TV, Video & Audio</a></li>
+         <li><a href="javascript:void(0)">Câmeras, Fotos & Video</a></li>
+         <li><a href="javascript:void(0)">Fones, Carregadores, Powerbank</a></li>
+        </ul>
+       </div>
+       <!-- End Single Widget -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Footer Middle -->
+  <!-- Start Footer Bottom -->
+  <div class="footer-bottom">
+   <div class="container">
+    <div class="inner-content">
+     <div class="row align-items-center">
+      <div class="col-lg-4 col-12">
+       <div class="payment-gateway">
+        <span>Aceitamos:</span>
+        <img src="assets/images/footer/credit-cards-footer.png" alt="#">
+       </div>
+      </div>
+      <div class="col-lg-4 col-12">
+       <div class="copyright">
+        <p>Desenvolvido por <a href="https://www.instagram.com/felipe.miranda.pires?r=nametag" rel="nofollow" target="_blank">Felipe Pires</a></p>
+       </div>
+      </div>
+      <div class="col-lg-4 col-12">
+       <ul class="socila">
+        <li>
+         <span>Siga nos:</span>
+        </li>
+        <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+        <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+        <li><a href="https://instagram.com/muambas_shop?igshid=MzNlNGNkZWQ4Mg=="><i class="lni lni-instagram"></i></a></li>
+        <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Footer Bottom -->
+ </footer>
+
+ <!-- ========================= scroll-top ========================= -->
+ <a href="#" class="scroll-top">
+  <i class="lni lni-chevron-up"></i>
+ </a>
+
+
+ <!-- ========================= JS here ========================= -->
+ <!-- <script src="assets/js/bootsrap.min.js"></script> -->
+ <script src="assets/js/tiny-slider.js"></script>
+ <script src="assets/js/glightbox.min.js"></script>
+ <script src="assets/js/script.js"></script>
+ <script src="assets/js/main.js"></script>
+
+ <script type="text/javascript">
+  //========= Hero Slider 
+  tns({
+   container: '.hero-slider',
+   slideBy: 'page',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   mouseDrag: true,
+   gutter: 0,
+   items: 1,
+   nav: false,
+   controls: true,
+   controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
+  });
+
+  //======== Brand Slider
+  tns({
+   container: '.brands-logo-carousel',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   mouseDrag: true,
+   gutter: 15,
+   nav: false,
+   controls: false,
+   responsive: {
+    0: {
+     items: 1,
+    },
+    540: {
+     items: 3,
+    },
+    768: {
+     items: 5,
+    },
+    992: {
+     items: 6,
+    }
+   }
+  });
+ </script>
+
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+ <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/vendor/chart.js/chart.umd.js"></script>
+ <script src="assets/vendor/echarts/echarts.min.js"></script>
+ <script src="assets/vendor/quill/quill.min.js"></script>
+ <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+ <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
+</body>
+
+</html>

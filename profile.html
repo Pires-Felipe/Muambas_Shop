@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="x-ua-compatible" content="ie=edge" />
+ <title>Muambas Shop Online - Perfil</title>
+ <meta name="description" content="" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+ <link rel="icon" href="images/devchallenges.png" />
+ <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+ <script src="https://kit.fontawesome.com/f51219bb95.js" crossorigin="anonymous"></script>
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" crossorigin="anonymous" />
+ <link href="https://fonts.gstatic.com" rel="preconnect">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
+
+
+ <!-- ========================= CSS here ========================= -->
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+ <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+ <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+ <link rel="stylesheet" href="assets/css/main.css" />
+ <link rel="stylesheet" href="assets/css/check.css">
+  <link rel="stylesheet" href="assets/css/profile.css">
+
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+ <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+ <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+ <script type="module" src="assets/js/banco.js"></script>
+ <!-- Preloader -->
+ <div class="preloader">
+  <div class="preloader-inner">
+   <div class="preloader-icon">
+    <span></span>
+    <span></span>
+   </div>
+  </div>
+ </div>
+ <!-- /End Preloader -->
+  <header class="header navbar-area">
+  <!-- Start Topbar -->
+    <div class="topbar">
+   <div class="container">
+    <div class="row align-items-center">
+     <div class="col-lg-4 col-md-4 col-12">
+      <div class="top-left">
+       <ul class="menu-top-link">
+        <li>
+         <div class="select-position">
+          <select id="select5">
+           <option value="0" selected>Português</option>
+           <option value="1">English</option>
+           <option value="2">Filipino</option>
+           <option value="3">Français</option>
+           <option value="4">العربية</option>
+           <option value="5">हिन्दी</option>
+           <option value="6">বাংলা</option>
+          </select>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-4 col-12">
+      <div class="top-middle">
+       <ul class="useful-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Sobre </a></li>
+        <li><a href="#">Contato</a></li>
+        
+       </ul>
+      </div>
+     </div>
+     <div class="center-flex col-lg-4 col-md-4 col-12 top-nav-perfil-">
+      <div class="top-end ">
+       <a href="profile.html">
+        <div class="user">
+         <i class="lni lni-user"></i>
+         Perfil
+        </div>
+       </a>
+       
+       <ul class="user-login">
+        <li>
+         <a href="login.html">Login</a>
+        </li>
+        <li>
+         <a href="login.html">Criar Conta</a>
+        </li>
+       
+        
+        
+       </ul>
+        <div class="div-a-pedido">
+         <a class="a-pedido" href="Pedidos.html">Pedidos</a>
+        </div>
+       <div class="teste-tt nav-item dropdown ">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2 user-nome-ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6 class="user-nome">User nome</h6>
+              <span class="user-email">mail@gmail.com</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                <i class="bi bi-person"></i>
+                <span>Meu perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Configurações</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <div class="teste">
+              <a class="dropdown-item d-flex align-items-center" href="faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Ajuda ?</span>
+              </a>
+            </div>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span><button id="login-out">Sair</button></span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </div><!-- End Profile Nav -->
+
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Topbar -->
+  <!-- Start Header Middle -->
+  
+  <!-- End Header Middle -->
+  <!-- Start Header Bottom -->
+  <div class="container">
+   <div class="row align-items-center">
+    <div class="col-lg-8 col-md-6 col-12">
+     <div class="nav-inner">
+      <!-- Start Mega Category Menu -->
+      <div class="mega-category-menu">
+       <span class="cat-button"><i class="lni lni-menu"></i>All Categories</span>
+       <ul class="sub-category">
+        <li>
+         <a href="product-grids.html">Electronics <i class="lni lni-chevron-right"></i></a>
+         <ul class="inner-sub-category">
+          <li><a href="product-grids.html">Digital Cameras</a></li>
+          <li><a href="product-grids.html">Camcorders</a></li>
+          <li><a href="product-grids.html">Camera Drones</a></li>
+          <li><a href="product-grids.html">Smart Watches</a></li>
+          <li><a href="product-grids.html">Headphones</a></li>
+          <li><a href="product-grids.html">MP3 Players</a></li>
+          <li><a href="product-grids.html">Microphones</a></li>
+          <li><a href="product-grids.html">Chargers</a></li>
+          <li><a href="product-grids.html">Batteries</a></li>
+          <li><a href="product-grids.html">Cables & Adapters</a></li>
+         </ul>
+        </li>
+        <li><a href="product-grids.html">accessories</a></li>
+        <li><a href="product-grids.html">Televisions</a></li>
+        <li><a href="product-grids.html">best selling</a></li>
+        <li><a href="product-grids.html">top 100 offer</a></li>
+        <li><a href="product-grids.html">sunglass</a></li>
+        <li><a href="product-grids.html">watch</a></li>
+        <li><a href="product-grids.html">man’s product</a></li>
+        <li><a href="product-grids.html">Home Audio & Theater</a></li>
+        <li><a href="product-grids.html">Computers & Tablets </a></li>
+        <li><a href="product-grids.html">Video Games </a></li>
+        <li><a href="product-grids.html">Home Appliances </a></li>
+       </ul>
+      </div>
+      <!-- End Mega Category Menu -->
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg">
+       <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+        <ul id="nav" class="navbar-nav ms-auto">
+         <li class="nav-item">
+          <a href="index.html" class="active" aria-label="Toggle navigation">Home</a>
+         </li>
+         <li class="nav-item">
+          <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Pages</a>
+          <ul class="sub-menu collapse" id="submenu-1-2">
+           <li class="nav-item"><a href="#">Sobre</a></li>
+           <li class="nav-item"><a href="#">Faq</a></li>
+           <li class="nav-item"><a href="login.html">Login</a></li>
+           <li class="nav-item"><a href="login.html">Register</a></li>
+           <li class="nav-item"><a href="profile.html">Perfil</a></li>
+          </ul>
+         </li>
+
+         <li class="nav-item">
+          <a href="#" aria-label="Toggle navigation">Contato</a>
+         </li>
+        </ul>
+       </div>
+       <!-- navbar collapse -->
+      </nav>
+      <!-- End Navbar -->
+     </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+     <!-- Start Nav Social -->
+     <div class="nav-social">
+      <h5 class="title">Siga-nos:</h5>
+      <ul>
+       <li>
+        <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+       </li>
+       <li>
+        <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+       </li>
+       <li>
+        <a href="https://instagram.com/muambas_shop?igshid=MzNlNGNkZWQ4Mg=="><i class="lni lni-instagram"></i></a>
+       </li>
+       <li>
+        <a href="javasc"><i class="lni lni-skype"></i></a>
+       </li>
+      </ul>
+     </div>
+     <!-- End Nav Social -->
+    </div>
+   </div>
+  </div>
+  <!-- End Header Bottom -->
+ </header>
+ <!-- /End Preloader -->
+ 
+ <div class="center-page-main">
+  <div class="col-lg-6">
+ 
+          <div class="card">
+           <div class="card-body">
+            <h5 class="card-title">Perfil</h5>
+ 
+            <div class="pagetitle">
+             
+             <nav>
+              <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+               <li class="breadcrumb-item active">Perfil</li>
+              </ol>
+             </nav>
+            </div><!-- End Breadcrumbs with a page title -->
+ 
+           </div>
+          </div>
+ 
+         
+ 
+         </div>
+ 
+ <div class="col-xl-8">
+
+  <div class="card card-t">
+   <div class="card-body">
+    <!-- Bordered Tabs -->
+    <ul class="nav nav-tabs nav-tabs-bordered d-flex" id="borderedTabJustified">
+
+     <li class="nav-item flex-fill">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Visão geral</button>
+     </li>
+
+     <li class="nav-item flex-fill">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar perfil</button>
+     </li>
+
+     <li class="nav-item flex-fill">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Configurações</button>
+     </li>
+
+     <li class="nav-item flex-fill">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Alterar senha</button>
+     </li>
+
+    </ul>
+    <div class="tab-content pt-2">
+
+     <div class="tab-pane fade show active profile-overview" id="profile-overview">
+      <div class="form-container-center">
+       <form class="forms flow">
+        <section class="form">
+         <div class="card">
+          <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+           <img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
+           <span id="info-name-e" class="font-weight-bold">Nome</span><span id="info-email-e" class="text-black-50">nome@mail.com.</span><span> </span>
+          </div>
+
+
+         </div>
+         <h2 class="form__title">Informações de contato</h2>
+         <div class="form__group">
+          <label for="email">E-mail</label>
+          <i class="fas fa-envelope icon icon--left"></i>
+          <input type="email" name="email" id="input-email-e" placeholder="Digite seu email..." required readonly />
+         </div>
+         <div class="form__group">
+          <label for="phone">Telefone</label>
+          <i class="fas fa-phone-alt icon icon--left"></i>
+          <input type="tel" name="phone" id="input-telefone-e" placeholder="Digite seu telefone..." required readonly />
+         </div>
+        </section>
+
+        <section class="form">
+         <h2 class="form__title">Endereço de entrega</h2>
+
+         <div class="form__group">
+          <label for="name">Nome</label>
+          <i class="fas fa-user-circle icon icon--left"></i>
+          <input type="text" name="name" id="input-nome-e" placeholder="Seu nome..." required minlength="2" readonly />
+         </div>
+         <div class="form__group">
+          <label for="name">Sobrenome</label>
+          <i class="fas fa-user-circle icon icon--left"></i>
+          <input type="text" name="name" id="input-sobrenome-e" placeholder="Seu sobrenome..." required minlength="2" readonly />
+         </div>
+         <div class="form__group">
+          <label for="address">Bairro</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-bairro-e" placeholder="Seu bairro..." required readonly />
+         </div>
+         <div class="form__group">
+          <label for="address">Rua</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-rua-e" placeholder="Sua rua..." required readonly />
+         </div>
+         <div class="form__group">
+          <label for="address">Número</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="number" name="address" id="input-numero-e" placeholder="Seu número..." required readonly />
+         </div>
+         <div class="form__group">
+          <label for="address">Complemento(opcional)</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-complemento-e" placeholder="Seu complemento..." required readonly />
+         </div>
+         <div class="form__group">
+          <label for="city">Cidade</label>
+          <i class="fas fa-city icon icon--left"></i>
+          <input type="text" name="city" id="input-cidade-e" placeholder="Sua cidade..." required readonly />
+         </div>
+
+         <div class="county-postcode">
+          <div class="form__group">
+           <label for="country-choice-e">Estado</label>
+           <i class="fas fa-globe-africa icon icon--left"></i>
+           <select id="country-choice-e" required disabled>
+            <option value="Paraná">Paraná</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            </option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Mato Grosso do Sul ">Mato Grosso do Sul</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+           </select>
+          </div>
+          <div class="form__group">
+           <label for="postal-code"> Código Postal</label>
+           <i class="fas fa-box icon icon--left"></i>
+           <input type="number" name="postal-code" id="input-postalcode-e" placeholder="Código postal..." required readonly />
+          </div>
+         </div>
+         <div class="mt-5 text-center"><button style="background: red; border: 1px solid black;" id="btn-loginOut" class="btn btn-primary profile-button-e" type="button">Login out</button></div>
+
+        </section>
+
+       </form>
+      </div>
+     </div>
+
+     <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+      <!-- Profile Edit Form -->
+
+
+      <div class="form-container-center">
+       <form class="forms flow">
+        <section class="form">
+         <div class="row mb-3">
+          <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Imagem de perfil</label>
+          <div class="col-md-8 col-lg-9">
+           <img src="assets/images/profile-img.jpg" alt="Profile">
+           <div class="pt-2">
+            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+           </div>
+          </div>
+         </div>
+         <h2 class="form__title">Informações de contato</h2>
+         <div class="form__group">
+          <label for="email">E-mail</label>
+          <i class="fas fa-envelope icon icon--left"></i>
+          <input type="email" name="email" id="input-email" placeholder="Digite seu email..." required />
+         </div>
+         <div class="form__group">
+          <label for="phone">Telefone</label>
+          <i class="fas fa-phone-alt icon icon--left"></i>
+          <input type="tel" name="phone" id="input-telefone" placeholder="Digite seu telefone..." required />
+         </div>
+        </section>
+
+        <section class="form">
+         <h2 class="form__title">Endereço de entrega</h2>
+
+         <div class="form__group">
+          <label for="name">Nome</label>
+          <i class="fas fa-user-circle icon icon--left"></i>
+          <input type="text" name="name" id="input-nome" placeholder="Seu nome..." required minlength="2" />
+         </div>
+         <div class="form__group">
+          <label for="name">Sobrenome</label>
+          <i class="fas fa-user-circle icon icon--left"></i>
+          <input type="text" name="name" id="input-sobrenome" placeholder="Seu sobrenome..." required minlength="2" />
+         </div>
+         <div class="form__group">
+          <label for="address">Bairro</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-bairro" placeholder="Seu bairro..." required />
+         </div>
+         <div class="form__group">
+          <label for="address">Rua</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-rua" placeholder="Sua rua..." required />
+         </div>
+         <div class="form__group">
+          <label for="address">Número</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="number" name="address" id="input-numero" placeholder="Seu número..." required />
+         </div>
+         <div class="form__group">
+          <label for="address">Complemento(opcional)</label>
+          <i class="fas fa-home icon icon--left"></i>
+          <input type="text" name="address" id="input-complemento" placeholder="Seu complemento..." required />
+         </div>
+         <div class="form__group">
+          <label for="city">Cidade</label>
+          <i class="fas fa-city icon icon--left"></i>
+          <input type="text" name="city" id="input-cidade" placeholder="Sua cidade..." required />
+         </div>
+
+         <div class="county-postcode">
+          <div class="form__group">
+           <label for="country-choice">Estado</label>
+           <i class="fas fa-globe-africa icon icon--left"></i>
+           <select id="country-choice" required>
+            <option value="Paraná">Paraná</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            </option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Mato Grosso do Sul ">Mato Grosso do Sul</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+           </select>
+          </div>
+          <div class="form__group">
+           <label for="postal-code"> Código Postal</label>
+           <i class="fas fa-box icon icon--left"></i>
+           <input type="number" name="postal-code" id="input-postalcode" placeholder="Código postal..." required />
+          </div>
+         </div>
+         <div class="mt-5 text-center"><button class="btn btn-primary profile-button-up" type="button">Salvar Perfil</button></div>
+
+        </section>
+
+       </form>
+      </div>
+
+      <!-- End Profile Edit Form -->
+
+     </div>
+
+     <div class="tab-pane fade pt-3" id="profile-settings">
+
+      <!-- Settings Form -->
+      <form>
+
+       <div class="row mb-3">
+        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Preferências de notificação da conta</label>
+        <div class="col-md-8 col-lg-9">
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="changesMade" checked>
+          <label class="form-check-label" for="changesMade">
+           Atualização de pedidos via Whatsapp
+          </label>
+         </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newProducts" checked>
+          <label class="form-check-label" for="newProducts">
+           Informações do pedido e serviços
+          </label>
+         </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="proOffers">
+          <label class="form-check-label" for="proOffers">
+           Promoções e ofertas
+          </label>
+         </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+          <label class="form-check-label" for="securityNotify">
+           Alertas de segurança
+          </label>
+         </div>
+        </div>
+       </div>
+
+       <div class="text-center">
+         <div class="loading loading-preference">Aguarde...</div>
+         <div class="error-message error-message-preference"></div>
+         <div class="sent-message sent-message-preference">Dados atualizados !</div>
+        
+
+        <button type="submit" class="btn btn-primary" id="btn-save-preference">Salvar configurações</button>
+       </div>
+      </form><!-- End settings Form -->
+
+     </div>
+
+     <div class="tab-pane fade pt-3" id="profile-change-password">
+      <!-- Change Password Form -->
+      <form>
+
+       <div class="row mb-3">
+        <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Senha atual</label>
+        <div class="col-md-8 col-lg-9">
+         <input name="password" type="password" class="form-control" id="currentPassword">
+        </div>
+       </div>
+
+       <div class="row mb-3">
+        <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nova senha</label>
+        <div class="col-md-8 col-lg-9">
+         <input name="newpassword" type="password" class="form-control" id="newPassword">
+        </div>
+       </div>
+
+       <div class="row mb-3">
+        <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Repita nova senha</label>
+        <div class="col-md-8 col-lg-9">
+         <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+        </div>
+       </div>
+
+       <div class="text-center">
+          <div class="loading loading-pass">Aguarde...</div>
+           <div class="error-message error-message-pass"></div>
+           <div class="sent-message sent-message-pass">Sua solicitação foi registrada. Obrigado!</div>
+   
+        <button type="submit" class="btn btn-primary" id="alterarSenha">Alterar</button>
+       </div>
+      </form><!-- End Change Password Form -->
+
+     </div>
+
+    </div><!-- End Bordered Tabs -->
+
+   </div>
+  </div>
+
+ </div>
+</div>
+
+
+
+
+ <script src="assets/js/bootsrap.min.js"></script>
+ <script src="assets/js/tiny-slider.js"></script>
+ <script src="assets/js/glightbox.min.js"></script>
+ <script src="assets/js/script.js"></script>
+ <script src="assets/js/main.js"></script>
+
+ 
+   <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+</body>
+
+</html>
